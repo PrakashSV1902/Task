@@ -46,6 +46,24 @@ body{
     font-weight: bold;
 }
 
+.nav{
+    position: absolute;
+    top: 60px;
+    left: 35%;
+    font-size: 16px;
+}
+.nav a{
+    text-decoration: none;
+    padding: 0px 6px;
+    color: #a41b2f;
+    font-weight: bold;
+}
+.nav a:hover{
+    color: #f9a800;
+    scale: 1.2;
+    text-decoration: underline;
+}
+
 .menu_btn{
     height: 50px;
     width: 50px;
