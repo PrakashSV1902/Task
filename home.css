@@ -437,6 +437,9 @@ body{
        display: none;
         
     }
+    .about_content h5{
+        width: 120px;
+    }
     
 }
 
