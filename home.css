@@ -2,9 +2,9 @@ body{
     padding: 0px;
     margin: 0px;
 }
-.container{
-    /* width: 100%; */
-}
+/* .container{
+    width: 100%;
+} */
 
 /*Header*/
 
@@ -124,47 +124,41 @@ body{
 @media screen and (max-width: 800px){
 .logo{
     scale: 0.7;
-    border: 2px solid;
-    /* left: 20vh; */
     margin: 0px auto;
+    left: -10%;
 }
 .menu{
     visibility: hidden;
 }
 .nav{
-    border: 2px solid;
-    width: 100%;
-    /* margin: 0px auto; */
     scale: 0.7;
-    top: 150px;
+    top: 160px;
     display: flex;
     flex-wrap: wrap;
-    left: 10px;
+    left: -20%;
+    min-width: 520px;
+    justify-content: space-around;
 }
 .header_img{
-    width: 500px;
+   min-width: 775px;
+   margin-left: -400px;
+   height: 800px;
+}
+.nav a{
+    font-size: 16px;
+    padding: 3px 10px;
+    font-weight: bolder;
+    background-color: white;
 }
 
 
-
 }
-
-
-
-
-
-
 
 /*Header* ------------------------------/
 
 
 
 /*Happenings*/
-
-
-
-
-
 
 .happenings{
     width: 80%;
@@ -218,15 +212,13 @@ body{
     .grey_bg{
         width: 100%;
     }
+    .happenings h2{
+        scale: 0.7;
+    }
+    .happenings p{
+        font-size: 14px;
+    }
 }
-
-
-
-
-
-
-
-
 
 /*Happenings ----------------------------------*/
 
@@ -287,7 +279,7 @@ body{
     .academics h1{
         scale: 0.7;
         text-align: center;
-        left: 0%;
+        left: -20px;
         font-size: 70px
     }
     .academics_box{
@@ -302,13 +294,6 @@ body{
     }
 }
 
-
-
-
-
-
-
-
 /*Academics ---------------------------------------*/
 
 /*Sticky*/
@@ -320,7 +305,7 @@ body{
     padding: 10px;
     position: fixed;
     top: 350px;
-    z-index: 5;
+    z-index: 4;
     margin-left: 97.5%;
     border-radius: 5px 0px 0px 5px;
 }
@@ -336,11 +321,9 @@ body{
     }
     .sticky{
         position: fixed;
+        z-index: 4;
     }
 }
-
-
-
 
 /*Sticky ------------------------------------------------*/
 
@@ -393,19 +376,6 @@ body{
         scale: 0.7;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /*Uniform --------------------------------------------------*/
 
@@ -471,7 +441,6 @@ body{
     
 }
 
-
 /*About ------------------------------------------*/
 
 /*Mission*/
@@ -531,18 +500,9 @@ body{
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
 /*Mission --------------------------------------*/
+
+/*Study mrsb*/
 .top_cont{
     width: 80%;
     margin: 0px auto;
@@ -631,7 +591,55 @@ body{
     border-left: 0px;
 }
 
+@media screen and (max-width: 800px){
+    .top_cont{
+        width: 100%;
+        scale: 0.7;
+        margin-top: 0px;
+        display: flex;
+    }
+    .section{
+        scale: 0.7;
+        width: 150px;
+        margin: 0px;
+    }
+    .sec1{
+        display: none;
+    }
+    .sec2{
+        border: none;
+    }
+    .bot_cont_l2{
+        scale: 0.7;
+        width: 100%;
+        left: 0%;
+        top: -80px;
+    }
+    .points{
+        width: 150px;
+        height: 120px;
+        border: none;
+    }
+    .points h5{
+        scale: 0.7;
+    }
+    .pt5 h5{
+        margin-top: 15px;
+        text-align: center;
+    }
+    .pt1,.pt3,.pt5,.pt7{
+        border-right: 1px solid;
+    }
+}
+@media screen and (min-width: 450px){
+    .pt1,.pt3,.pt5,.pt7{
+        border: none;
+    }
+}
 
+/*Study mrsb ------------------------------*/
+
+/*Footer*/
 .firstimg{
     border: none;
    
@@ -719,3 +727,59 @@ body{
     text-align: center;
     padding-bottom: 10px;
 }
+
+@media screen and (max-width: 800px){
+    .top_cont1{
+        width: 100%;
+        scale: 0.7;
+        margin-top: 60px;
+        display: flex;
+        margin-left: 0px;
+        left: 0%;
+    }
+    .section1{
+        scale: 0.7;
+        width: 150px;
+        margin: 0px;
+        border: none;
+    }
+    .footer_div{
+        width: 100%;
+        flex-wrap: wrap;
+        scale: 0.7;
+        padding-top: -0px;
+        margin-top: -120px;
+        display: block;
+        text-align: center;
+        position: relative;
+        /* top: 5px; */
+    }
+    .about_us,.quick_links,.contact_us{
+        width: 400px;
+        /* border: 2px solid; */
+        margin-top: 0px;
+    }
+    .quick_links li{
+        width: 110px;
+    }
+    .bot_footer p{
+        scale: 0.7;
+        font-size: 14px;
+        width: 100%;
+    }
+    .about_us ul{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .about_us li{
+        width: 150px;
+    }
+    .top_cont1 img{
+        width: 80px;
+        height: 80px;
+    }
+
+}
+
+
+/*Footer ------------------------------------*/
